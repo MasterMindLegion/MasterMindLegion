@@ -1,0 +1,131 @@
+// Task: Add seperate folders and files to structure scss
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  overflow-x: hidden;
+  // add color - vh
+  background-color: #009688 ;
+  display: flex;
+  flex-direction: column;
+
+}
+
+// Image
+img {
+  height: 100%;
+  max-height: 400px;
+  width: 100%;
+}
+
+
+// HEADER & VIDEO
+.v-header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container-video {
+  max-width: 960px;
+  padding: 0 1rem;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (max-width: 960px) {
+   padding: 0 3rem;
+
+   h1 {
+     font-size: 2rem;
+   }
+   p {
+     font-size: 1rem;
+   }
+  }
+}
+
+.fullscreen-video-wrap {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  video {
+    min-width: 100%;
+    min-height: 100vh;
+  }
+
+  .header-content {
+    z-index: 2;
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    color: white;
+  }
+}
+
+// HEADER OVERLAY
+
+.header-overlay {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+// Section About
+
+.about {
+  width: 100%;
+
+  .about-box {
+    margin-bottom: 2.5rem;
+    box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.7);
+}
+
+  .about-box-wrap {
+    padding: 2rem;
+
+    @media (min-width:960px) {
+      margin-top: 4rem;
+      padding: 4rem;
+    }
+  }
+}
+
+// Section Services 
+
+.services {
+  
+  i {
+    color: #ff1744;
+    margin: 40px 0;
+    font-size: 7rem;
+    display: block;
+  }
+
+}
+
+//Projects
+
+
+// Section Contact 
+
+.contact {
+  
+  .waves-button-input{
+    color: white;
+    outline: none;
+  }
+}
+
+
+// Custom Classes
