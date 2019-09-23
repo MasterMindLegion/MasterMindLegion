@@ -1,9 +1,8 @@
-// Task: Add seperate folders and files to structure scss
+//Task: Add seperate folders and files to structure scss
 
 html {
   scroll-behavior: smooth;
 }
-
 
 body {
   overflow-x: hidden;
@@ -11,7 +10,7 @@ body {
   background-color: #009688 ;
   display: flex;
   flex-direction: column;
-
+  justify-content: center;
 }
 
 // Image
@@ -25,6 +24,7 @@ img {
 // HEADER & VIDEO
 .v-header {
   height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
 }
@@ -96,7 +96,7 @@ img {
 
     @media (min-width:960px) {
       margin-top: 4rem;
-      padding: 4rem;
+      padding: 2rem;
     }
   }
 }
@@ -104,7 +104,14 @@ img {
 // Section Services 
 
 .services {
-  
+
+  .row {
+    margin-bottom: 0;
+  }
+
+  .col {
+    border: 1px solid white;
+  }
   i {
     color: #ff1744;
     margin: 40px 0;
